@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Miscellaneous jQuery Events</title>
+    <script type="text/javascript" src="../jquery-1.3.2.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $("div").one("click", function() {
+                $(this).css({ background: "red",
+                    cursor: "auto"
+                });
+            });
+        });
+    </script>
+    <style type="text/css">
+        div {
+            width: 60px;
+            height: 60px;
+            margin: 10px;
+            float: left;
+            background: blue;
+            border: 2px solid black;
+            cursor: pointer;
+        }
+        p {
+            font-size: 18pt;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        Click on each square to change color</p>
+    <div>
+    </div>
+    <div>
+    </div>
+    <div>
+    </div>
+    <div>
+    </div>
+    <div>
+    </div>
+</body>
+</html>
